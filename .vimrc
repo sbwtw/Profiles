@@ -15,3 +15,6 @@ set fileencodings=utf-8,gb18030 "文件编码
 " pthon 执行
 map <F9> :w<cr>:!python %<cr>
 
+" java 编译
+map <F5> :w<cr>:!javac -d /tmp %<cr>
+map <F6> :!java -classpath /tmp %:t:r<cr>
